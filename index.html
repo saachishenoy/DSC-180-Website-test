@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Historical ChatBot</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About This Project</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="chat-container">
-        <div id="chat-box"></div>
-        <input type="text" id="user-query" placeholder="Ask a historical question...">
-        <button onclick="askQuestion()">Ask</button>
+    <div class="container">
+        <header>
+            <h1>Historical ChatBot</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About This Project</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="chat-container">
+                <div id="chat-box"></div>
+                <input type="text" id="user-query" placeholder="Ask a historical question...">
+                <button onclick="askQuestion()">Ask</button>
+            </div>
+            <section id="about">
+                <h2>About This Project</h2>
+                <p>Hello, welcome to the Historical ChatBot project. This interactive tool is designed to provide users with historical facts and information in a conversational format.</p>
+            </section>
+        </main>
     </div>
-    <section id="about">
-        <h2>About This Project</h2>
-        <p>Hello</p>
-    </section>
     <script src="script.js"></script>
 </body>
 </html>
