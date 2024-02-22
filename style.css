@@ -5,13 +5,13 @@ body, html {
     background-color: #FAFAFA; /* Light grey background */
 }
 
-.container {
+/* .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh; /* Full viewport height */
-}
+} */
 
 header {
     background-color: #007BFF; /* Example: Bright blue */
@@ -64,9 +64,3 @@ button:hover {
     background-color: #0056b3; /* Slightly darker on hover */
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #chat-container {
-        width: 80%; /* More width on smaller screens */
-    }
-}
