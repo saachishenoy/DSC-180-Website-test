@@ -93,40 +93,47 @@
       </h2>
     </div>
     <div class="row justify-content-center">
-      <div class="col-md-6">
+      <div class="col-md-10">
         <div class="detail-box text-center">
           <h3>
             Methodology
           </h3>
           <p>
-      The project utilized historical newspaper data from the early twentieth century, specifically between 1925 and 1929. This data, sourced from reputable publications, was processed using ProQuest TDM and stored in a SQLite database for efficient retrieval. Documents were filtered to include only news articles, excluding obituaries and advertisements. The data was then parsed to extract metadata such as title, date, publisher, and text content.
+            The project utilized historical newspaper data from the early twentieth century, specifically between 1925 and 1929. This data, sourced from reputable publications, was processed using ProQuest TDM and stored in a SQLite database for efficient retrieval. Documents were filtered to include only news articles, excluding obituaries and advertisements. The data was then parsed to extract metadata such as title, date, publisher, and text content.
           </p>
-            <h3>
+          <h3>
             Search and Retrieval Process
           </h3>
           <p>
-      The initial methodology involved creating document encodings using the BERT model, followed by constructing a Facebook AI Similarity Search (FAISS) index for efficient document retrieval. The search process involved encoding user queries, identifying nearest neighbor documents, and selecting relevant text chunks for the LLM to generate responses. After encountering scalability issues, the project transitioned to using SentenceTransformer models for text encoding and a Chroma database for improved performance.
+            The initial methodology involved creating document encodings using the BERT model, followed by constructing a Facebook AI Similarity Search (FAISS) index for efficient document retrieval. The search process involved encoding user queries, identifying nearest neighbor documents, and selecting relevant text chunks for the LLM to generate responses. After encountering scalability issues, the project transitioned to using SentenceTransformer models for text encoding and a Chroma database for improved performance.
           </p>
           <p>
             Molestiae odio earum non qui cumque provident voluptates, repellendus exercitationem, possimus at iste corrupti officiis unde alias eius ducimus reiciendis soluta eveniet. Nobis ullam ab omnis quasi expedita.
           </p>
-                <h3>
+          <h3>
             Evaluation of Search Methodologies
           </h3>
           <p>
-      The initial search methodology using BERT and SQLite revealed limitations in scalability and relevance of search results. Transitioning to SentenceTransformer and Chroma databases significantly enhanced the efficiency and accuracy of the retrieval process.
+            The initial search methodology using BERT and SQLite revealed limitations in scalability and relevance of search results. Transitioning to SentenceTransformer and Chroma databases significantly enhanced the efficiency and accuracy of the retrieval process.
           </p>
-             <h3>
+          <h3>
             User Satisfaction Testing
           </h3>
           <p>
-      User satisfaction was assessed through multiple rounds of testing, with users rating their satisfaction with the tool's responses. Initial tests showed moderate satisfaction, which significantly improved after methodological refinements and LLM tuning. This was evidenced by higher satisfaction scores and positive user feedback on the improved depth and relevance of responses.
+            User satisfaction was assessed through multiple rounds of testing, with users rating their satisfaction with the tool's responses. Initial tests showed moderate satisfaction, which significantly improved after methodological refinements and LLM tuning. This was evidenced by higher satisfaction scores and positive user feedback on the improved depth and relevance of responses.
           </p>
-                       <h3>
-            Discussion and conclusio
+          <h3>
+            Discussion and Conclusion
           </h3>
           <p>
-This project undertook the exploration of Retrieval Augmented Generation (RAG) to enhance historical understanding from 1925 to 1929, focusing on user satisfaction and the quality of outputs. Initially, the project utilized the "bert-base-uncased" model with an FAISS index for the search function, but inefficiencies and inaccuracies led to a methodology shift. Efficiency tests on multiple embedding models highlighted the need for a balance between model complexity and encoding time, essential for scaling to large document volumes. The selection of SentenceTransformer's all-MiniLM-L6-v2 model, despite its slower performance compared to TinyBERT, was due to its higher complexity and training parameters, alongside a chunking methodology that improved data handling from 2 million documents to 10 million document chunks, enhancing search relevancy and reducing noise. Initial search evaluations showed the system's inability to differentiate effectively between document meanings and user queries, rendering the retrieval process nearly random and impacting the quality of the LLM's output. The refined methodology, however, enabled more nuanced and detailed LLM responses, leading to a noticeable improvement in user satisfaction. Feedback from early tool usage indicated a need for further model tuning to eliminate irrelevant details and confusion, which upon implementation, significantly improved user satisfaction ratings. The project's findings align with current literature, emphasizing the importance of sophisticated information retrieval algorithms in RAG applications and suggesting potential areas for future research. However, the tool's limitations, including potential biases in source materials and the assumption of source credibility, were acknowledged. The project outlines future directions for enhancing the tool's efficiency and expanding its historical scope, indicating its broader implications for educational and research applications. This iterative development process and the integration of RAG in various domains promise continued advancement in information retrieval technologies.          </p>
+            This project undertook the exploration of Retrieval Augmented Generation (RAG) to enhance historical understanding from 1925 to 1929, focusing on user satisfaction and the quality of outputs. The project's findings align with current literature, emphasizing the importance of sophisticated information retrieval algorithms in RAG applications and suggesting potential areas for future research. However, the tool's limitations, including potential biases in source materials and the assumption of source credibility, were acknowledged. The project outlines future directions for enhancing the tool's efficiency and expanding its historical scope, indicating its broader implications for educational and research applications. This iterative development process and the integration of RAG in various domains promise continued advancement in information retrieval technologies.
+          </p>
+          <h3>
+            Impact and Applications
+          </h3>
+          <p>
+            This project promises to significantly impact educational curricula, academic research, and historical analysis by providing a more accurate, accessible means of exploring historical events. Its applications range from classroom settings to professional research, enhancing understanding and engagement with historical events.
+          </p>
         </div>
       </div>
     </div>
